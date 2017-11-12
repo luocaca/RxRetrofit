@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:scrollbarStyle="insideInset">
+
+    <TextView
+        android:id="@+id/tv_book_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        tools:text="12jlfjaljf12jlfjaljfla12jlfjaljf12jlfjaljf12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljflala12jlfjaljf12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljflala12jlfjaljf12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljflala12jlfjaljf12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljflala12jlfjaljf12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljflala12jlfjaljf12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljflala12jlfjaljf12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljflalala12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljfla12jlfjaljflala"
+
+        />
+</ScrollView>
+

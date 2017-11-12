@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="luocaca.rxretrofit.ui.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="查看所有图书"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="分页电影天堂"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toRightOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yazhou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="亚洲"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toRightOf="@+id/button3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/zipai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="自拍"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/oumei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="欧美"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toRightOf="@+id/zipai"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/fenlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="丰乳"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toRightOf="@+id/oumei"
+        app:layout_constraintTop_toBottomOf="@+id/yazhou" />
+
+    <Button
+        android:id="@+id/guochang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="国产"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zipai" />
+
+    <Button
+        android:id="@+id/weimei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="唯美"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toRightOf="@+id/guochang"
+        app:layout_constraintTop_toBottomOf="@+id/oumei" />
+
+    <Button
+        android:id="@+id/siwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="丝袜"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/weimei"
+        app:layout_constraintTop_toBottomOf="@+id/fenlu" />
+
+    <Button
+        android:id="@+id/yzfq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:text="亚洲"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guochang" />
+
+    <Button
+        android:id="@+id/qjll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:text="乱"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/yzfq"
+        app:layout_constraintTop_toBottomOf="@+id/weimei" />
+
+    <Button
+        android:id="@+id/wlzb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:text="网络直播"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/qjll"
+        app:layout_constraintTop_toBottomOf="@+id/weimei" />
+
+    <Button
+        android:id="@+id/tpzp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="自拍"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yzfq" />
+
+    <Button
+        android:id="@+id/omjq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="欧美"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/tpzp"
+        app:layout_constraintTop_toBottomOf="@+id/qjll" />
+
+    <Button
+        android:id="@+id/ktdm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="卡通动漫"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/omjq"
+        app:layout_constraintTop_toBottomOf="@+id/wlzb" />
+
+    <Button
+        android:id="@+id/rhny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:text="日韩"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/wlzb"
+        app:layout_constraintTop_toBottomOf="@+id/weimei" />
+
+    <Button
+        android:id="@+id/xsyp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="学生影片"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/ktdm"
+        app:layout_constraintTop_toBottomOf="@+id/rhny" />
+
+    <Button
+        android:id="@+id/show_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="图书馆"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <!--view-source:http://www.sssxx49.com/html/aky/index20.html-->
+</android.support.constraint.ConstraintLayout>
+
+
