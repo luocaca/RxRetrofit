@@ -35,20 +35,24 @@
         <activity android:name=".ui.BookOneDetail" />
         <activity
             android:name=".ui.VideoActivity"
-            android:configChanges="screenSize|keyboardHidden|orientation"/>
+            android:configChanges="screenSize|keyboardHidden|orientation" />
         <activity android:name=".ui.VideoListActivity" />
         <activity android:name=".ui.PageJsoupActivity" />
         <activity android:name=".ui.PageJsoupActivity_bak" />
+        <activity android:name=".ui.TTLActivity" />
+        <activity android:name=".ui.TTLTypeListActivity" />
+        <activity
+            android:name=".ui.TTLVideoActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation" />
         <activity
             android:name=".ui.viewbigimage.ViewBigImageActivity"
             android:theme="@style/full" />
 
 
-        <meta-data android:name="luocaca.rxretrofit.config.GlideCache"
-            android:value="GlideModule"/>
+        <meta-data
+            android:name="luocaca.rxretrofit.config.GlideCache"
+            android:value="GlideModule" />
     </application>
-
-
 
 
 </manifest>

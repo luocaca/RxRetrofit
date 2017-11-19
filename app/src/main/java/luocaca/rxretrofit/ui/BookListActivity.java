@@ -24,12 +24,15 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.reactivex.Observable;
+import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import luocaca.rxretrofit.R;
 import luocaca.rxretrofit.bean.ApiResult;
 import luocaca.rxretrofit.bean.Book;
+import luocaca.rxretrofit.bean.ObjectResponse;
 import luocaca.rxretrofit.bean.Person;
 import luocaca.rxretrofit.di.component.DaggerBookListComponent;
 import luocaca.rxretrofit.di.module.ClientModel;
@@ -54,6 +57,7 @@ public class BookListActivity extends AppCompatActivity {
 
     public MyAdapter myAdapter;
     private StaggeredGridLayoutManager layoutManager;
+    private static final String TAG = "BookListActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,14 +69,40 @@ public class BookListActivity extends AppCompatActivity {
                 .build()
                 .inject(this);
 
+        Api api = retrofit.create(Api.class);
+        api.requestAddMovies("http://192.168.0.11/videoworld/v1/addMovies", "abc", "[]")
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<ObjectResponse>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        Log.i(TAG, "onSubscribe: ");
+                    }
+
+                    @Override
+                    public void onNext(ObjectResponse value) {
+                        Log.i(TAG, "onNext: " + value.toString());
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.i(TAG, "onError: " + e.getMessage());
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.i(TAG, "onComplete: ");
+
+                    }
+                });
+
 
         setContentView(R.layout.activity_book_list);
 
         ButterKnife.bind(this);
 
         Toast.makeText(this, "persion=" + per.toString(), Toast.LENGTH_SHORT).show();
-
-
 
 
         //        recyclerView.setLayoutManager(new LinearLayoutManager(this));

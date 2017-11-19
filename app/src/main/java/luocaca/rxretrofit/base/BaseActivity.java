@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import luocaca.rxretrofit.cache.ACache;
 
 /**
  * Created by Administrator on 2017/10/18 0018.
@@ -22,12 +23,14 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     public ProgressDialog dialog;
 
+    protected ACache mACache;
+
 
     @Override
     protected final void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mActivity = this;
-
+        mACache = ACache.get(mActivity);
         dialog = new ProgressDialog(mActivity);
         dialog.setMessage("加载中。。。。。");
         dialog.setCanceledOnTouchOutside(false);

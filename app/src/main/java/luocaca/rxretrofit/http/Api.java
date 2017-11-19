@@ -6,9 +6,11 @@ import io.reactivex.Observable;
 import luocaca.rxretrofit.bean.AllCity;
 import luocaca.rxretrofit.bean.ApiResult;
 import luocaca.rxretrofit.bean.Book;
+import luocaca.rxretrofit.bean.ObjectResponse;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
+import retrofit2.http.Url;
 
 /**
  * Created by Administrator on 2017/8/26 0026.
@@ -16,7 +18,12 @@ import retrofit2.http.Query;
 
 public interface Api {
 
-    // BASE_URL = "http://v.juhe.cn/weather/";
+//      String BASE_URL_REMOTE = "http://192.168.0.11/videoworld/v1/"; //远程服务器的
+
+    String BASE_URL_REMOTE = "http://115.159.196.175/VideoWorld/v1/"; //远程服务器的
+
+//    String BASE_URL = "http://v.juhe.cn/weather/";
+
 
     @GET("citys")
     Observable<AllCity> getAllCity(@Query("key") String key);
@@ -46,6 +53,12 @@ public interface Api {
 
     @GET("book/del/{bookId}")
     Observable<ApiResult> requestDelete(@Path("bookId") String bookId);
+
+    @GET
+    Observable<ObjectResponse> requestGetMovies(@Url String baseUrl, @Query("url") String url);
+
+    @GET
+    Observable<ObjectResponse> requestAddMovies(@Url String baseUrl, @Query("url") String url, @Query("list") String list);
 
 
 }

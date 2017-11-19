@@ -42,10 +42,40 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private Api api;
 
+    String text = " player: <div class=\"player\">\n" +
+            "    <div id=\"a1\"></div>\n" +
+            "    <script type=\"text/javascript\" src=\"/ckplay/ckplayer.js\"></script> \n" +
+            "    <script type=\"text/javascript\">\n" +
+            "       var flashvars={\n" +
+            "           f:' \n" +
+            "\t\t   https://dns.63mimi.com/20170913/146/1/xml/91_d0c48598f3ad41cd9cb028ef8f44abeb.mp4\n" +
+            "\t\t   ',\n" +
+            "            c:0,\n" +
+            "           i:'http://201709.www05ruru.com:8888/mb1/gg/dizhi.jpg',\n" +
+            "           e:1,\n" +
+            "           l:'http://201709.www05ruru.com:8888/mb1/gg/pc.jpg',\n" +
+            "           r:'http://201709.www05ruru.com:8888/mb1/gg/dytz.html',\n" +
+            "           t:10,\n" +
+            "           d:'http://201709.www05ruru.com:8888/mb1/gg/gg.gif',\n" +
+            "       };    var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};\n" +
+            "       video=\n" +
+            "\t   [\"\n" +
+            "\t   https://dns.63mimi.com/20170913/146/1/xml/91_d0c48598f3ad41cd9cb028ef8f44abeb.mp4 \n" +
+            "\t   ->\n" +
+            "\t   video/mp4\"];\n" +
+            "       CKobject.embed('/ckplay/ckplayer.swf','a1','ckplayer_a1','610','485',false,flashvars,video,params);\n" +
+            "   </script>\n" +
+            "   </div>";
+
 
     @Override
     public void initView(Bundle savedInstanceState) {
 
+
+        String result = text.substring(text.indexOf("http"), text.indexOf(".mp4")+4);
+
+        Toast.makeText(mActivity, "result\n" + result, Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "result \n: " + result);
 
         verifyStoragePermissions(mActivity);
 
@@ -162,8 +192,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
     }
-
-
 
 
     @Override
@@ -329,6 +357,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
             case R.id.fab:
+
+                //跳转天天 lu
+                String url = "http://www.2013sss.com/wap/";
+
+                mActivity.startActivity(new Intent(mActivity, TTLActivity.class));
+
 //                postAdd();
 
 //                ACache.get(mActivity).clear();
