@@ -229,7 +229,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="图书馆"
+        android:text="→_→右边那个邮件是新功能，上面的那些不行了-->"
         android:textColor="@android:color/white"
         android:layout_marginLeft="8dp"
         app:layout_constraintBottom_toBottomOf="parent"

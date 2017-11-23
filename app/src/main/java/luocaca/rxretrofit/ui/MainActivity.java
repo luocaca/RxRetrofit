@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +19,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -29,6 +37,8 @@ import luocaca.rxretrofit.R;
 import luocaca.rxretrofit.base.BaseActivity;
 import luocaca.rxretrofit.bean.ApiResult;
 import luocaca.rxretrofit.http.Api;
+import luocaca.rxretrofit.http.JsonUtil;
+import luocaca.rxretrofit.http.PostUtil;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -72,9 +82,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public void initView(Bundle savedInstanceState) {
 
 
-        String result = text.substring(text.indexOf("http"), text.indexOf(".mp4")+4);
+        String result = text.substring(text.indexOf("http"), text.indexOf(".mp4") + 4);
 
-        Toast.makeText(mActivity, "result\n" + result, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(mActivity, "result\n" + result, Toast.LENGTH_SHORT).show();
         Log.i(TAG, "result \n: " + result);
 
         verifyStoragePermissions(mActivity);
@@ -88,13 +98,107 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 //        getHtmlRes();
 
 
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                getHtmlRes();
-//
-//            }
-//        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+
+                //获取登录信息。并且保存住请求cokie
+
+
+                Map<String, String> params = new HashMap<String, String>();
+
+                params.put("password", "gcSZtaXMPUUrDs9YBXzroQaph4mhIB/rEmkwlwNQHSUhOlRxBkH65hVjWje41Vy9FDeawfWwtXfMbY/suBAPPkaGj+3JPk+k7OsJRwzDhOuEKH2hOvYC1Z3ihqDKIElv4gOzuAjddHMH6tpZPOPcq6qIJKAPzFwzfodfKg7Wv+s="
+                );
+                params.put("username", "17074990702");
+                params.put("remember", "true");
+
+                String hos = "http://123.207.176.15/user/login?version=3.5.0&platform=android&packageId=3&channel=and-laosiji.cpd-3&deviceName=HUAWEI+FRD-AL00&androidVersion=7.0";
+                String cookie = null;
+                try {
+                    cookie = PostUtil.post(hos, null, params, null);
+                } catch (IOException e) {
+                    cookie = "";
+                    e.printStackTrace();
+                }
+
+
+                getRoomMsg(cookie);
+
+            }
+        }).start();
+
+
+    }
+
+    private void getRoomMsg(String cookie) {
+
+//        POST /room/getRooms?page=0&status=1&version=3.5.0&platform=android&packageId=3 HTTP/1.1
+//        connection: keep-alive
+//        Charsert: UTF-8
+//        Content-Type: multipart/form-data;boundary=96b49f79-cc3d-414a-85ce-f8f25ddbe283
+//        User-Agent: Dalvik/2.1.0 (Linux; U; Android 7.0; FRD-AL00 Build/HUAWEIFRD-AL00)
+//        Host: 123.207.176.15
+//        Accept-Encoding: gzip
+//        Content-Length: 42
+
+        String host = "http://123.207.176.15/room/getRooms?page=0&status=1&version=3.5.0&platform=android&packageId=3";
+
+        HttpURLConnection connection;
+        try {
+
+            URL url = new URL(host);
+
+
+            connection = (HttpURLConnection) url.openConnection();
+
+
+            if (!TextUtils.isEmpty(cookie)) {
+                connection.setRequestProperty("Cookie", cookie);
+            }
+            connection.setRequestMethod("POST");
+            connection.setDoInput(true);
+            connection.setDoInput(true);
+
+
+            connection.connect();
+
+
+            int code = connection.getResponseCode();
+
+            if (code == 200) {
+                StringBuffer buffer = new StringBuffer();
+
+                InputStream inputStream = connection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+
+//                byte[] b = new byte[1024];
+//                int length;
+                String line = "";
+                while ((line = bufferedReader.readLine()) != null) {
+                    buffer.append(line);
+                }
+
+//                while ((length = inputStream.read(b)) != -1) {
+//                    length = inputStream.read(b);
+//                    buffer.append(new String(b));
+//                    Log.i(TAG, "getRoomMsg: " + length);
+//                }
+                Log.i(TAG, "getRoomMsg: " + buffer.toString());
+
+                String json = buffer.toString();
+
+                Log.i(TAG, "getRoomMsg: " + json);
+
+
+                Log.i(TAG, "getRoomMsg: " + JsonUtil.formatJson(json));
+
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 
     }

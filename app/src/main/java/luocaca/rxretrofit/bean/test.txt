@@ -1,0 +1,846 @@
+{
+    "status_code": 0,
+    "data": [
+        {
+            "status": 4,
+            "with_linkmic": false,
+            "top_users": [],
+            "enable_room_perspective": false,
+            "owner": {
+                "allow_find_by_contacts": false,
+                "avatar_large": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "1080x1080/3b65000b33330f2f6dec"
+                },
+                "allow_use_linkmic": false,
+                "allow_sync_to_other_platform": true,
+                "allow_others_download_video": true,
+                "is_follower": false,
+                "hotsoon_verified_reason": "",
+                "constellation": "天蝎座",
+                "id": 57903219862,
+                "verified_mobile": false,
+                "push_ichat": true,
+                "city": "",
+                "verified": false,
+                "short_id": 92935338,
+                "push_follow": true,
+                "verified_reason": "",
+                "push_digg": true,
+                "pay_grade": {
+                    "diamond_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/12400003aba3dd42e213",
+                            "http://pb9.pstatp.com/obj/12400003aba3dd42e213",
+                            "http://pb3.pstatp.com/obj/12400003aba3dd42e213"
+                        ],
+                        "uri": "12400003aba3dd42e213"
+                    },
+                    "this_grade_min_diamond": 50000,
+                    "total_diamond_count": 68465,
+                    "name": "星星",
+                    "level": 14,
+                    "upgrade_need_consume": 2686,
+                    "live_icon": {
+                        "url_list": [
+                            "http://p1.pstatp.com/obj/f210008a6c5019c3cca",
+                            "http://pb3.pstatp.com/obj/f210008a6c5019c3cca",
+                            "http://pb3.pstatp.com/obj/f210008a6c5019c3cca"
+                        ],
+                        "uri": "f210008a6c5019c3cca"
+                    },
+                    "next_diamond": 100000,
+                    "grade_describe": "距升级还需消费2686钻",
+                    "screen_chat_type": 2,
+                    "im_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/f210008a6c440515677",
+                            "http://pb9.pstatp.com/obj/f210008a6c440515677",
+                            "http://pb3.pstatp.com/obj/f210008a6c440515677"
+                        ],
+                        "uri": "f210008a6c440515677"
+                    },
+                    "grade_icon_list": [
+                        {
+                            "level_str": "Lv.13",
+                            "icon_diamond": 30000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p3.pstatp.com/obj/3b60000a640891b867f1",
+                                    "http://pb9.pstatp.com/obj/3b60000a640891b867f1",
+                                    "http://pb3.pstatp.com/obj/3b60000a640891b867f1"
+                                ],
+                                "uri": "3b60000a640891b867f1"
+                            },
+                            "level": 13
+                        },
+                        {
+                            "level_str": "Lv.14",
+                            "icon_diamond": 50000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p1.pstatp.com/obj/3b650006790d6b271215",
+                                    "http://pb3.pstatp.com/obj/3b650006790d6b271215",
+                                    "http://pb3.pstatp.com/obj/3b650006790d6b271215"
+                                ],
+                                "uri": "3b650006790d6b271215"
+                            },
+                            "level": 14
+                        },
+                        {
+                            "level_str": "Lv.15",
+                            "icon_diamond": 60000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p3.pstatp.com/obj/3b610006baa843d86b2e",
+                                    "http://pb9.pstatp.com/obj/3b610006baa843d86b2e",
+                                    "http://pb3.pstatp.com/obj/3b610006baa843d86b2e"
+                                ],
+                                "uri": "3b610006baa843d86b2e"
+                            },
+                            "level": 15
+                        }
+                    ],
+                    "now_diamond": 57314,
+                    "this_grade_max_diamond": 59999,
+                    "next_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/12400003aaeaf22dde47",
+                            "http://pb9.pstatp.com/obj/12400003aaeaf22dde47",
+                            "http://pb3.pstatp.com/obj/12400003aaeaf22dde47"
+                        ],
+                        "uri": "12400003aaeaf22dde47"
+                    },
+                    "icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/f2100085c370d0a323a",
+                            "http://pb9.pstatp.com/obj/f2100085c370d0a323a",
+                            "http://pb3.pstatp.com/obj/f2100085c370d0a323a"
+                        ],
+                        "uri": "f2100085c370d0a323a"
+                    },
+                    "im_icon_with_level": {
+                        "url_list": [
+                            "http://p1.pstatp.com/obj/30ee0007c457969b5d5b",
+                            "http://pb3.pstatp.com/obj/30ee0007c457969b5d5b",
+                            "http://pb3.pstatp.com/obj/30ee0007c457969b5d5b"
+                        ],
+                        "uri": "30ee0007c457969b5d5b"
+                    },
+                    "next_name": "月亮",
+                    "pay_diamond_bak": 0
+                },
+                "id_str": "57903219862",
+                "avatar_medium": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "720x720/3b65000b33330f2f6dec"
+                },
+                "fold_stranger_chat": false,
+                "birthday_valid": true,
+                "need_profile_guide": false,
+                "hotsoon_verified": false,
+                "birthday_description": "95后",
+                "birthday": 816393600,
+                "stats": {
+                    "record_count": 79,
+                    "following_count": 16,
+                    "total_duration": 365966,
+                    "daily_income": 0,
+                    "item_count": 89,
+                    "daily_fan_ticket_count": 0,
+                    "id_str": "57903219862",
+                    "follower_count": 711171,
+                    "diamond_count": 57314,
+                    "id": 57903219862,
+                    "diamond_consumed_count": 57314
+                },
+                "push_video_post": true,
+                "push_video_recommend": true,
+                "nickname": "井甜💋",
+                "avatar_thumb": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "100x100/3b65000b33330f2f6dec"
+                },
+                "disable_ichat": 1,
+                "fan_ticket_count": 4539624,
+                "push_status": true,
+                "avatar_jpg": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg",
+                        "http://pb1.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg",
+                        "http://pb3.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg"
+                    ],
+                    "uri": "720x720/3b65000b33330f2f6dec"
+                },
+                "allow_be_located": true,
+                "level": 1,
+                "push_comment_status": true,
+                "gender": 2,
+                "allow_show_in_gossip": true,
+                "allow_strange_comment": true,
+                "signature": "💋梦的方向叫做闯（只有这一个号、其他冒充！）              💋围  脖：小井甜  ",
+                "follow_status": 1
+            },
+            "create_time": 1511264053,
+            "mosaic_status": 0,
+            "dynamic_cover_low": null,
+            "client_version": 272,
+            "id": 6490829680154413837,
+            "user_count": 0,
+            "stats": {
+                "money": 290820,
+                "fan_ticket": 48470,
+                "id": 6490829680154413837,
+                "total_user": 29469,
+                "id_str": "6490829680154413837"
+            },
+            "title": "",
+            "finish_time": 1511271390,
+            "cover": {},
+            "share_url": "https://www.huoshan.com/share/room/6490829680154413837/",
+            "stream_id_str": "6490829680274410253",
+            "stream_id": 6490829680274410253,
+            "cell_style": 3,
+            "id_str": "6490829680154413837",
+            "stream_url": {
+                "rtmp_pull_url": "http://pull-flv-l1-hs.pstatp.com/hudong/stream-6490829680274410253.flv",
+                "provider": 2,
+                "id": 6490829680274410253,
+                "id_str": "6490829680274410253"
+            },
+            "os_type": 1,
+            "dynamic_cover": null
+        },
+        {
+            "status": 4,
+            "with_linkmic": false,
+            "top_users": [],
+            "enable_room_perspective": false,
+
+            "create_time": 1511169686,
+            "mosaic_status": 0,
+            "dynamic_cover_low": null,
+            "client_version": 272,
+            "id": 6490424381184051982,
+            "user_count": 0,
+            "stats": {
+                "money": 140442,
+                "fan_ticket": 23407,
+                "id": 6490424381184051982,
+                "total_user": 23826,
+                "id_str": "6490424381184051982"
+            },
+            "title": "",
+            "finish_time": 1511174161,
+            "cover": {},
+            "share_url": "https://www.huoshan.com/share/room/6490424381184051982/",
+            "stream_id_str": "6490424381101312781",
+            "stream_id": 6490424381101312781,
+            "cell_style": 3,
+            "id_str": "6490424381184051982",
+            "stream_url": {
+                "rtmp_pull_url": "http://pull-flv-l6-hs.pstatp.com/live/stream-6490424381101312781.flv",
+                "provider": 1,
+                "id": 6490424381101312781,
+                "id_str": "6490424381101312781"
+            },
+            "os_type": 1,
+            "dynamic_cover": null
+        },
+
+        {
+            "status": 4,
+            "with_linkmic": false,
+            "top_users": [],
+            "enable_room_perspective": false,
+            "owner": {
+                "allow_find_by_contacts": false,
+                "avatar_large": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "1080x1080/3b65000b33330f2f6dec"
+                },
+                "allow_use_linkmic": false,
+                "allow_sync_to_other_platform": true,
+                "allow_others_download_video": true,
+                "is_follower": false,
+                "hotsoon_verified_reason": "",
+                "constellation": "天蝎座",
+                "id": 57903219862,
+                "verified_mobile": false,
+                "push_ichat": true,
+                "city": "",
+                "verified": false,
+                "short_id": 92935338,
+                "push_follow": true,
+                "verified_reason": "",
+                "push_digg": true,
+
+                "id_str": "57903219862",
+                "avatar_medium": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "720x720/3b65000b33330f2f6dec"
+                },
+                "fold_stranger_chat": false,
+                "birthday_valid": true,
+                "need_profile_guide": false,
+                "hotsoon_verified": false,
+                "birthday_description": "95后",
+                "birthday": 816393600,
+                "stats": {
+                    "record_count": 79,
+                    "following_count": 16,
+                    "total_duration": 365966,
+                    "daily_income": 0,
+                    "item_count": 89,
+                    "daily_fan_ticket_count": 0,
+                    "id_str": "57903219862",
+                    "follower_count": 711171,
+                    "diamond_count": 57314,
+                    "id": 57903219862,
+                    "diamond_consumed_count": 57314
+                },
+                "push_video_post": true,
+                "push_video_recommend": true,
+                "nickname": "井甜💋",
+                "avatar_thumb": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "100x100/3b65000b33330f2f6dec"
+                },
+                "disable_ichat": 1,
+                "fan_ticket_count": 4539624,
+                "push_status": true,
+                "avatar_jpg": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg",
+                        "http://pb1.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg",
+                        "http://pb3.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg"
+                    ],
+                    "uri": "720x720/3b65000b33330f2f6dec"
+                },
+                "allow_be_located": true,
+                "level": 1,
+                "push_comment_status": true,
+                "gender": 2,
+                "allow_show_in_gossip": true,
+                "allow_strange_comment": true,
+                "signature": "💋梦的方向叫做闯（只有这一个号、其他冒充！）              💋围  脖：小井甜  ",
+                "follow_status": 1
+            },
+            "create_time": 1508652861,
+            "mosaic_status": 0,
+            "dynamic_cover_low": null,
+            "client_version": 0,
+            "id": 6479614696910654221,
+            "user_count": 0,
+            "stats": {
+                "money": 430608,
+                "fan_ticket": 71768,
+                "id": 6479614696910654221,
+                "total_user": 39647,
+                "id_str": "6479614696910654221"
+            },
+            "title": "",
+            "finish_time": 1508661293,
+            "cover": {},
+            "share_url": "https://www.huoshan.com/share/room/6479614696910654221/",
+            "stream_id_str": "6479614697020033805",
+            "stream_id": 6479614697020033805,
+            "cell_style": 3,
+            "id_str": "6479614696910654221",
+            "stream_url": {
+                "rtmp_pull_url": "http://pull-flv-l6-hs.pstatp.com/live/stream-6479614697020033805.flv",
+                "provider": 1,
+                "id": 6479614697020033805,
+                "id_str": "6479614697020033805"
+            },
+            "os_type": 1,
+            "dynamic_cover": null
+        },
+
+
+
+
+
+
+
+
+        {
+            "status": 4,
+            "with_linkmic": false,
+            "top_users": [],
+            "enable_room_perspective": false,
+            "owner": {
+                "allow_find_by_contacts": false,
+                "avatar_large": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "1080x1080/3b65000b33330f2f6dec"
+                },
+                "allow_use_linkmic": false,
+                "allow_sync_to_other_platform": true,
+                "allow_others_download_video": true,
+                "is_follower": false,
+                "hotsoon_verified_reason": "",
+                "constellation": "天蝎座",
+                "id": 57903219862,
+                "verified_mobile": false,
+                "push_ichat": true,
+                "city": "",
+                "verified": false,
+                "short_id": 92935338,
+                "push_follow": true,
+                "verified_reason": "",
+                "push_digg": true,
+                "pay_grade": {
+                    "diamond_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/12400003aba3dd42e213",
+                            "http://pb9.pstatp.com/obj/12400003aba3dd42e213",
+                            "http://pb3.pstatp.com/obj/12400003aba3dd42e213"
+                        ],
+                        "uri": "12400003aba3dd42e213"
+                    },
+                    "this_grade_min_diamond": 50000,
+                    "total_diamond_count": 68465,
+                    "name": "星星",
+                    "level": 14,
+                    "upgrade_need_consume": 2686,
+                    "live_icon": {
+                        "url_list": [
+                            "http://p1.pstatp.com/obj/f210008a6c5019c3cca",
+                            "http://pb3.pstatp.com/obj/f210008a6c5019c3cca",
+                            "http://pb3.pstatp.com/obj/f210008a6c5019c3cca"
+                        ],
+                        "uri": "f210008a6c5019c3cca"
+                    },
+                    "next_diamond": 100000,
+                    "grade_describe": "距升级还需消费2686钻",
+                    "screen_chat_type": 2,
+                    "im_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/f210008a6c440515677",
+                            "http://pb9.pstatp.com/obj/f210008a6c440515677",
+                            "http://pb3.pstatp.com/obj/f210008a6c440515677"
+                        ],
+                        "uri": "f210008a6c440515677"
+                    },
+                    "grade_icon_list": [
+                        {
+                            "level_str": "Lv.13",
+                            "icon_diamond": 30000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p3.pstatp.com/obj/3b60000a640891b867f1",
+                                    "http://pb9.pstatp.com/obj/3b60000a640891b867f1",
+                                    "http://pb3.pstatp.com/obj/3b60000a640891b867f1"
+                                ],
+                                "uri": "3b60000a640891b867f1"
+                            },
+                            "level": 13
+                        },
+                        {
+                            "level_str": "Lv.14",
+                            "icon_diamond": 50000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p1.pstatp.com/obj/3b650006790d6b271215",
+                                    "http://pb3.pstatp.com/obj/3b650006790d6b271215",
+                                    "http://pb3.pstatp.com/obj/3b650006790d6b271215"
+                                ],
+                                "uri": "3b650006790d6b271215"
+                            },
+                            "level": 14
+                        },
+                        {
+                            "level_str": "Lv.15",
+                            "icon_diamond": 60000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p3.pstatp.com/obj/3b610006baa843d86b2e",
+                                    "http://pb9.pstatp.com/obj/3b610006baa843d86b2e",
+                                    "http://pb3.pstatp.com/obj/3b610006baa843d86b2e"
+                                ],
+                                "uri": "3b610006baa843d86b2e"
+                            },
+                            "level": 15
+                        }
+                    ],
+                    "now_diamond": 57314,
+                    "this_grade_max_diamond": 59999,
+                    "next_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/12400003aaeaf22dde47",
+                            "http://pb9.pstatp.com/obj/12400003aaeaf22dde47",
+                            "http://pb3.pstatp.com/obj/12400003aaeaf22dde47"
+                        ],
+                        "uri": "12400003aaeaf22dde47"
+                    },
+                    "icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/f2100085c370d0a323a",
+                            "http://pb9.pstatp.com/obj/f2100085c370d0a323a",
+                            "http://pb3.pstatp.com/obj/f2100085c370d0a323a"
+                        ],
+                        "uri": "f2100085c370d0a323a"
+                    },
+                    "im_icon_with_level": {
+                        "url_list": [
+                            "http://p1.pstatp.com/obj/30ee0007c457969b5d5b",
+                            "http://pb3.pstatp.com/obj/30ee0007c457969b5d5b",
+                            "http://pb3.pstatp.com/obj/30ee0007c457969b5d5b"
+                        ],
+                        "uri": "30ee0007c457969b5d5b"
+                    },
+                    "next_name": "月亮",
+                    "pay_diamond_bak": 0
+                },
+                "id_str": "57903219862",
+                "avatar_medium": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "720x720/3b65000b33330f2f6dec"
+                },
+                "fold_stranger_chat": false,
+                "birthday_valid": true,
+                "need_profile_guide": false,
+                "hotsoon_verified": false,
+                "birthday_description": "95后",
+                "birthday": 816393600,
+                "stats": {
+                    "record_count": 79,
+                    "following_count": 16,
+                    "total_duration": 365966,
+                    "daily_income": 0,
+                    "item_count": 89,
+                    "daily_fan_ticket_count": 0,
+                    "id_str": "57903219862",
+                    "follower_count": 711171,
+                    "diamond_count": 57314,
+                    "id": 57903219862,
+                    "diamond_consumed_count": 57314
+                },
+                "push_video_post": true,
+                "push_video_recommend": true,
+                "nickname": "井甜💋",
+                "avatar_thumb": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "100x100/3b65000b33330f2f6dec"
+                },
+                "disable_ichat": 1,
+                "fan_ticket_count": 4539624,
+                "push_status": true,
+                "avatar_jpg": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg",
+                        "http://pb1.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg",
+                        "http://pb3.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg"
+                    ],
+                    "uri": "720x720/3b65000b33330f2f6dec"
+                },
+                "allow_be_located": true,
+                "level": 1,
+                "push_comment_status": true,
+                "gender": 2,
+                "allow_show_in_gossip": true,
+                "allow_strange_comment": true,
+                "signature": "💋梦的方向叫做闯（只有这一个号、其他冒充！）              💋围  脖：小井甜  ",
+                "follow_status": 1
+            },
+            "create_time": 1508414600,
+            "mosaic_status": 0,
+            "dynamic_cover_low": null,
+            "client_version": 0,
+            "id": 6478591374936836878,
+            "user_count": 0,
+            "stats": {
+                "money": 192630,
+                "fan_ticket": 32105,
+                "id": 6478591374936836878,
+                "total_user": 41044,
+                "id_str": "6478591374936836878"
+            },
+            "title": "",
+            "finish_time": 1508421177,
+            "cover": {},
+            "share_url": "https://www.huoshan.com/share/room/6478591374936836878/",
+            "stream_id_str": "6478591375037827854",
+            "stream_id": 6478591375037827854,
+            "cell_style": 3,
+            "id_str": "6478591374936836878",
+            "stream_url": {
+                "rtmp_pull_url": "http://pull-flv-l6-hs.pstatp.com/live/stream-6478591375037827854.flv",
+                "provider": 1,
+                "id": 6478591375037827854,
+                "id_str": "6478591375037827854"
+            },
+            "os_type": 1,
+            "dynamic_cover": null
+        },
+        {
+            "status": 4,
+            "with_linkmic": false,
+            "top_users": [],
+            "enable_room_perspective": false,
+            "owner": {
+                "allow_find_by_contacts": false,
+                "avatar_large": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/1080x1080/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "1080x1080/3b65000b33330f2f6dec"
+                },
+                "allow_use_linkmic": false,
+                "allow_sync_to_other_platform": true,
+                "allow_others_download_video": true,
+                "is_follower": false,
+                "hotsoon_verified_reason": "",
+                "constellation": "天蝎座",
+                "id": 57903219862,
+                "verified_mobile": false,
+                "push_ichat": true,
+                "city": "",
+                "verified": false,
+                "short_id": 92935338,
+                "push_follow": true,
+                "verified_reason": "",
+                "push_digg": true,
+                "pay_grade": {
+                    "diamond_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/12400003aba3dd42e213",
+                            "http://pb9.pstatp.com/obj/12400003aba3dd42e213",
+                            "http://pb3.pstatp.com/obj/12400003aba3dd42e213"
+                        ],
+                        "uri": "12400003aba3dd42e213"
+                    },
+                    "this_grade_min_diamond": 50000,
+                    "total_diamond_count": 68465,
+                    "name": "星星",
+                    "level": 14,
+                    "upgrade_need_consume": 2686,
+                    "live_icon": {
+                        "url_list": [
+                            "http://p1.pstatp.com/obj/f210008a6c5019c3cca",
+                            "http://pb3.pstatp.com/obj/f210008a6c5019c3cca",
+                            "http://pb3.pstatp.com/obj/f210008a6c5019c3cca"
+                        ],
+                        "uri": "f210008a6c5019c3cca"
+                    },
+                    "next_diamond": 100000,
+                    "grade_describe": "距升级还需消费2686钻",
+                    "screen_chat_type": 2,
+                    "im_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/f210008a6c440515677",
+                            "http://pb9.pstatp.com/obj/f210008a6c440515677",
+                            "http://pb3.pstatp.com/obj/f210008a6c440515677"
+                        ],
+                        "uri": "f210008a6c440515677"
+                    },
+                    "grade_icon_list": [
+                        {
+                            "level_str": "Lv.13",
+                            "icon_diamond": 30000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p3.pstatp.com/obj/3b60000a640891b867f1",
+                                    "http://pb9.pstatp.com/obj/3b60000a640891b867f1",
+                                    "http://pb3.pstatp.com/obj/3b60000a640891b867f1"
+                                ],
+                                "uri": "3b60000a640891b867f1"
+                            },
+                            "level": 13
+                        },
+                        {
+                            "level_str": "Lv.14",
+                            "icon_diamond": 50000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p1.pstatp.com/obj/3b650006790d6b271215",
+                                    "http://pb3.pstatp.com/obj/3b650006790d6b271215",
+                                    "http://pb3.pstatp.com/obj/3b650006790d6b271215"
+                                ],
+                                "uri": "3b650006790d6b271215"
+                            },
+                            "level": 14
+                        },
+                        {
+                            "level_str": "Lv.15",
+                            "icon_diamond": 60000,
+                            "icon": {
+                                "url_list": [
+                                    "http://p3.pstatp.com/obj/3b610006baa843d86b2e",
+                                    "http://pb9.pstatp.com/obj/3b610006baa843d86b2e",
+                                    "http://pb3.pstatp.com/obj/3b610006baa843d86b2e"
+                                ],
+                                "uri": "3b610006baa843d86b2e"
+                            },
+                            "level": 15
+                        }
+                    ],
+                    "now_diamond": 57314,
+                    "this_grade_max_diamond": 59999,
+                    "next_icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/12400003aaeaf22dde47",
+                            "http://pb9.pstatp.com/obj/12400003aaeaf22dde47",
+                            "http://pb3.pstatp.com/obj/12400003aaeaf22dde47"
+                        ],
+                        "uri": "12400003aaeaf22dde47"
+                    },
+                    "icon": {
+                        "url_list": [
+                            "http://p3.pstatp.com/obj/f2100085c370d0a323a",
+                            "http://pb9.pstatp.com/obj/f2100085c370d0a323a",
+                            "http://pb3.pstatp.com/obj/f2100085c370d0a323a"
+                        ],
+                        "uri": "f2100085c370d0a323a"
+                    },
+                    "im_icon_with_level": {
+                        "url_list": [
+                            "http://p1.pstatp.com/obj/30ee0007c457969b5d5b",
+                            "http://pb3.pstatp.com/obj/30ee0007c457969b5d5b",
+                            "http://pb3.pstatp.com/obj/30ee0007c457969b5d5b"
+                        ],
+                        "uri": "30ee0007c457969b5d5b"
+                    },
+                    "next_name": "月亮",
+                    "pay_diamond_bak": 0
+                },
+                "id_str": "57903219862",
+                "avatar_medium": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/720x720/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "720x720/3b65000b33330f2f6dec"
+                },
+                "fold_stranger_chat": false,
+                "birthday_valid": true,
+                "need_profile_guide": false,
+                "hotsoon_verified": false,
+                "birthday_description": "95后",
+                "birthday": 816393600,
+                "stats": {
+                    "record_count": 79,
+                    "following_count": 16,
+                    "total_duration": 365966,
+                    "daily_income": 0,
+                    "item_count": 89,
+                    "daily_fan_ticket_count": 0,
+                    "id_str": "57903219862",
+                    "follower_count": 711171,
+                    "diamond_count": 57314,
+                    "id": 57903219862,
+
+                    "diamond_consumed_count": 57314
+                },
+                "push_video_post": true,
+                "push_video_recommend": true,
+                "nickname": "井甜💋",
+                "avatar_thumb": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp",
+                        "http://pb1.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp",
+                        "http://pb3.pstatp.com/live/100x100/3b65000b33330f2f6dec.webp"
+                    ],
+                    "uri": "100x100/3b65000b33330f2f6dec"
+                },
+                "disable_ichat": 1,
+                "fan_ticket_count": 4539624,
+                "push_status": true,
+                "avatar_jpg": {
+                    "url_list": [
+                        "http://p9.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg",
+                        "http://pb1.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg",
+                        "http://pb3.pstatp.com/live/720x720/3b65000b33330f2f6dec.jpg"
+                    ],
+                    "uri": "720x720/3b65000b33330f2f6dec"
+                },
+                "allow_be_located": true,
+                "level": 1,
+                "push_comment_status": true,
+                "gender": 2,
+                "allow_show_in_gossip": true,
+                "allow_strange_comment": true,
+                "signature": "💋梦的方向叫做闯（只有这一个号、其他冒充！）              💋围  脖：小井甜  ",
+                "follow_status": 1
+            },
+            "create_time": 1508328565,
+            "mosaic_status": 0,
+            "dynamic_cover_low": null,
+            "client_version": 0,
+            "id": 6478221856540363534,
+            "user_count": 0,
+            "stats": {
+                "money": 218076,
+                "fan_ticket": 36349,
+                "id": 6478221856540363534,
+                "total_user": 42982,
+                "id_str": "6478221856540363534"
+            },
+            "title": "",
+            "finish_time": 1508334564,
+            "cover": {},
+            "share_url": "https://www.huoshan.com/share/room/6478221856540363534/",
+            "stream_id_str": "6478221856637324046",
+            "stream_id": 6478221856637324046,
+            "cell_style": 3,
+            "id_str": "6478221856540363534",
+            "stream_url": {
+                "rtmp_pull_url": "http://pull-flv-l6-hs.pstatp.com/live/stream-6478221856637324046.flv",
+                "provider": 1,
+                "id": 6478221856637324046,
+                "id_str": "6478221856637324046"
+            },
+            "os_type": 1,
+            "dynamic_cover": null
+        }
+    ],
+    "extra": {
+        "has_more": true,
+        "fatal_ids": [
+            6462596016137833741,
+            6463988507596557582
+        ],
+        "now": 1511353148979,
+        "total": 79
+    }
+}
