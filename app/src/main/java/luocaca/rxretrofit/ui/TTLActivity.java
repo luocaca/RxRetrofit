@@ -101,7 +101,8 @@ public class TTLActivity extends BaseActivity {
     Retrofit retrofit;
 
     //    public String initUrl = "http://www.sssxx49.com/htm/index3.html";
-    public static String initUrl = "http://www.sssxx49.com/htm/index6.html";
+//    public static String initUrl = "http://www.sssxx49.com/htm/index6.html";
+    public static String initUrl = "http://www.2013sss.com/";
     //https://d2.xia12345.com/down/2017/8/27001/17826124.mp4
 
     //    String str = "https://d1.xia12345.com/down/201708/08/pt124.mp4";
@@ -186,7 +187,8 @@ public class TTLActivity extends BaseActivity {
                     @Override
                     public ObservableSource<String> apply(final String url) throws Exception {
                         // 获取中央缓存  通过网络
-                        return getCenterCache(url)
+//                        getCenterCache(url)
+                        return Observable.just(new ObjectResponse())
                                 .subscribeOn(Schedulers.io())
                                 .observeOn(AndroidSchedulers.mainThread())
                                 .flatMap(new Function<ObjectResponse, ObservableSource<String>>() {
@@ -198,7 +200,7 @@ public class TTLActivity extends BaseActivity {
                                                     @Override
                                                     public ObservableSource<String> apply(ObjectResponse objectResponse) throws Exception {
                                                         //返回数据是空的 继续执行下面操作
-                                                        if (objectResponse.getResult() == null ) {
+                                                        if (objectResponse.getResult() == null) {
                                                             Log.i(TAG, "apply: result= null");
                                                             return Observable.just(url);
                                                         } else {
@@ -274,6 +276,7 @@ public class TTLActivity extends BaseActivity {
                     @Override
                     public void onError(Throwable e) {
                         Log.i(TAG, "onNext: " + e.getMessage());
+                        Toast.makeText(mActivity, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
@@ -283,7 +286,7 @@ public class TTLActivity extends BaseActivity {
                     }
                 })
         ;
-        ;
+
 //                .map(new Function<String, ArrayList<Movie>>() {
 //                    @Override
 //                    public ArrayList<Movie> apply(String s) throws Exception {
@@ -493,6 +496,7 @@ public class TTLActivity extends BaseActivity {
         return null;
     }
 
+    //    http://115.159.196.175/VideoWorld/v1/getMovies
     private Observable<ObjectResponse> getCenterCache(String urlKey) {
 
         return retrofit.create(Api.class)

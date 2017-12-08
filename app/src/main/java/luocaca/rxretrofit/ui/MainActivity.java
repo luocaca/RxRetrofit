@@ -25,20 +25,25 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
+
+import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import luocaca.rxretrofit.R;
 import luocaca.rxretrofit.base.BaseActivity;
 import luocaca.rxretrofit.bean.ApiResult;
+import luocaca.rxretrofit.bean.Result;
+import luocaca.rxretrofit.di.component.DaggerMainActivityComponent;
+import luocaca.rxretrofit.di.module.ClientModel;
 import luocaca.rxretrofit.http.Api;
+import luocaca.rxretrofit.http.GetUtil;
 import luocaca.rxretrofit.http.JsonUtil;
-import luocaca.rxretrofit.http.PostUtil;
+import retrofit2.Retrofit;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -48,6 +53,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @BindView(R.id.toolbar)
     public Toolbar toolbar;
+
+
+    @Inject
+    Retrofit retrofit;
 
 
     private Api api;
@@ -76,13 +85,79 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             "       CKobject.embed('/ckplay/ckplayer.swf','a1','ckplayer_a1','610','485',false,flashvars,video,params);\n" +
             "   </script>\n" +
             "   </div>";
+    private int userId = 1311110;
 
 
     @Override
     public void initView(Bundle savedInstanceState) {
 
 
+        DaggerMainActivityComponent.builder()
+                .clientModel(new ClientModel())
+                .build()
+                .inject(this);
+
+
+//        {"code":"200","message":"success","data":{"userid":1311111,"vip":"2","livevip":"1","credit":"0"}}
+        userId = 1311510;
+
+//        1311111
+        Log.i("live", "retrofit");
+
+        for (int i = 0; i < 100; i++) {
+            Log.i(TAG, "initView: " + 1311110);
+            userId++;
+
+            retrofit.create(Api.class)
+                    .requestVip("http://api.nlkmlk.com:81/love/user/" + userId)
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Consumer<Result>() {
+                        @Override
+                        public void accept(Result result) throws Exception {
+                            if (result.data.vip > 0 || result.data.livevip > 0) {
+                                Log.i(TAG, "accept: " + result.toString());
+                            }
+                        }
+                    });
+
+        }
+
+
+//        Log.i("live", "retrofit");
+//        retrofit.create(Api.class)
+//                .requestVip("http://api.nlkmlk.com:81/love/user/2091002")
+//                .subscribeOn(Schedulers.io())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .subscribe(new Consumer<Result>() {
+//                    @Override
+//                    public void accept(Result result) throws Exception {
+//                        Log.i(TAG, "accept: " + result.toString());
+//                    }
+//                });
+
         String result = text.substring(text.indexOf("http"), text.indexOf(".mp4") + 4);
+
+        //http://api.nlkmlk.com:81/love/user/2091002
+
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Log.i("live", "开始get请求");
+                String re = "";
+                try {
+                    Log.i("live", "initView: ");
+                    re = GetUtil.get("http://api.nlkmlk.com:81/love/user/2091002");
+                    Log.i("live", "http://api.nlkmlk.com:81/love/user/2091002 \n" + re);
+                } catch (IOException e) {
+                    Log.i("live", "initView: result" + e.getMessage());
+                    e.printStackTrace();
+                }
+                Log.i("live", "结束get请求");
+            }
+        }).start();
+
 
 //        Toast.makeText(mActivity, "result\n" + result, Toast.LENGTH_SHORT).show();
         Log.i(TAG, "result \n: " + result);
@@ -98,35 +173,35 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 //        getHtmlRes();
 
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-
-                //获取登录信息。并且保存住请求cokie
-
-
-                Map<String, String> params = new HashMap<String, String>();
-
-                params.put("password", "gcSZtaXMPUUrDs9YBXzroQaph4mhIB/rEmkwlwNQHSUhOlRxBkH65hVjWje41Vy9FDeawfWwtXfMbY/suBAPPkaGj+3JPk+k7OsJRwzDhOuEKH2hOvYC1Z3ihqDKIElv4gOzuAjddHMH6tpZPOPcq6qIJKAPzFwzfodfKg7Wv+s="
-                );
-                params.put("username", "17074990702");
-                params.put("remember", "true");
-
-                String hos = "http://123.207.176.15/user/login?version=3.5.0&platform=android&packageId=3&channel=and-laosiji.cpd-3&deviceName=HUAWEI+FRD-AL00&androidVersion=7.0";
-                String cookie = null;
-                try {
-                    cookie = PostUtil.post(hos, null, params, null);
-                } catch (IOException e) {
-                    cookie = "";
-                    e.printStackTrace();
-                }
-
-
-                getRoomMsg(cookie);
-
-            }
-        }).start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//
+//
+//                //获取登录信息。并且保存住请求cokie
+//
+//
+//                Map<String, String> params = new HashMap<String, String>();
+//
+//                params.put("password", "gcSZtaXMPUUrDs9YBXzroQaph4mhIB/rEmkwlwNQHSUhOlRxBkH65hVjWje41Vy9FDeawfWwtXfMbY/suBAPPkaGj+3JPk+k7OsJRwzDhOuEKH2hOvYC1Z3ihqDKIElv4gOzuAjddHMH6tpZPOPcq6qIJKAPzFwzfodfKg7Wv+s="
+//                );
+//                params.put("username", "17074990702");
+//                params.put("remember", "true");
+//
+//                String hos = "http://123.207.176.15/user/login?version=3.5.0&platform=android&packageId=3&channel=and-laosiji.cpd-3&deviceName=HUAWEI+FRD-AL00&androidVersion=7.0";
+//                String cookie = null;
+//                try {
+//                    cookie = PostUtil.post(hos, null, params, null);
+//                } catch (IOException e) {
+//                    cookie = "";
+//                    e.printStackTrace();
+//                }
+//
+//
+//                getRoomMsg(cookie);
+//
+//            }
+//        }).start();
 
 
     }
@@ -464,8 +539,26 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
                 //跳转天天 lu
                 String url = "http://www.2013sss.com/wap/";
-
+//
                 mActivity.startActivity(new Intent(mActivity, TTLActivity.class));
+//                for (int i = 0; i < 100; i++) {
+//                    Log.i(TAG, "initView: " + userId);
+//                    userId++;
+//
+//                    retrofit.create(Api.class)
+//                            .requestVip("http://api.nlkmlk.com:81/love/user/" + userId)
+//                            .subscribeOn(Schedulers.io())
+//                            .observeOn(AndroidSchedulers.mainThread())
+//                            .subscribe(new Consumer<Result>() {
+//                                @Override
+//                                public void accept(Result result) throws Exception {
+//                                    if (result.data.vip > 0 || result.data.livevip > 0) {
+//                                        Log.i(TAG, "accept: " + result.toString());
+//                                    }
+//                                }
+//                            });
+//                }
+
 
 //                postAdd();
 

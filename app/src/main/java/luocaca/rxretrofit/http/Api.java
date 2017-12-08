@@ -7,6 +7,7 @@ import luocaca.rxretrofit.bean.AllCity;
 import luocaca.rxretrofit.bean.ApiResult;
 import luocaca.rxretrofit.bean.Book;
 import luocaca.rxretrofit.bean.ObjectResponse;
+import luocaca.rxretrofit.bean.Result;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
@@ -20,7 +21,8 @@ public interface Api {
 
 //      String BASE_URL_REMOTE = "http://192.168.0.11/videoworld/v1/"; //远程服务器的
 
-    String BASE_URL_REMOTE = "http://115.159.196.175/VideoWorld/v1/"; //远程服务器的
+    String BASE_URL_REMOTE = "http://www.luocaca.cn/VideoWorld/v1/"; //远程服务器的
+//    String BASE_URL_REMOTE = "http://115.159.196.175/VideoWorld/v1/"; //远程服务器的
 
 //    String BASE_URL = "http://v.juhe.cn/weather/";
 
@@ -59,6 +61,10 @@ public interface Api {
 
     @GET
     Observable<ObjectResponse> requestAddMovies(@Url String baseUrl, @Query("url") String url, @Query("list") String list);
+
+    //http://api.nlkmlk.com:81/love/user/1711111
+    @GET
+    Observable<Result> requestVip(@Url String baseUrl );
 
 
 }
