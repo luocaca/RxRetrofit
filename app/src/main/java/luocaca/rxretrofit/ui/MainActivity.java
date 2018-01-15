@@ -31,17 +31,14 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.OnClick;
 import io.reactivex.Observable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import luocaca.rxretrofit.R;
 import luocaca.rxretrofit.base.BaseActivity;
 import luocaca.rxretrofit.bean.ApiResult;
-import luocaca.rxretrofit.bean.Result;
 import luocaca.rxretrofit.di.component.DaggerMainActivityComponent;
 import luocaca.rxretrofit.di.module.ClientModel;
 import luocaca.rxretrofit.http.Api;
-import luocaca.rxretrofit.http.GetUtil;
 import luocaca.rxretrofit.http.JsonUtil;
 import retrofit2.Retrofit;
 
@@ -53,6 +50,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @BindView(R.id.toolbar)
     public Toolbar toolbar;
+
+
 
 
     @Inject
@@ -104,24 +103,24 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 //        1311111
         Log.i("live", "retrofit");
 
-        for (int i = 0; i < 100; i++) {
-            Log.i(TAG, "initView: " + 1311110);
-            userId++;
-
-            retrofit.create(Api.class)
-                    .requestVip("http://api.nlkmlk.com:81/love/user/" + userId)
-                    .subscribeOn(Schedulers.io())
-                    .observeOn(AndroidSchedulers.mainThread())
-                    .subscribe(new Consumer<Result>() {
-                        @Override
-                        public void accept(Result result) throws Exception {
-                            if (result.data.vip > 0 || result.data.livevip > 0) {
-                                Log.i(TAG, "accept: " + result.toString());
-                            }
-                        }
-                    });
-
-        }
+//        for (int i = 0; i < 100; i++) {
+//            Log.i(TAG, "initView: " + 1311110);
+//            userId++;
+//
+//            retrofit.create(Api.class)
+//                    .requestVip("http://api.nlkmlk.com:81/love/user/" + userId)
+//                    .subscribeOn(Schedulers.io())
+//                    .observeOn(AndroidSchedulers.mainThread())
+//                    .subscribe(new Consumer<Result>() {
+//                        @Override
+//                        public void accept(Result result) throws Exception {
+//                            if (result.data.vip > 0 || result.data.livevip > 0) {
+//                                Log.i(TAG, "accept: " + result.toString());
+//                            }
+//                        }
+//                    });
+//
+//        }
 
 
 //        Log.i("live", "retrofit");
@@ -141,22 +140,22 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         //http://api.nlkmlk.com:81/love/user/2091002
 
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Log.i("live", "开始get请求");
-                String re = "";
-                try {
-                    Log.i("live", "initView: ");
-                    re = GetUtil.get("http://api.nlkmlk.com:81/love/user/2091002");
-                    Log.i("live", "http://api.nlkmlk.com:81/love/user/2091002 \n" + re);
-                } catch (IOException e) {
-                    Log.i("live", "initView: result" + e.getMessage());
-                    e.printStackTrace();
-                }
-                Log.i("live", "结束get请求");
-            }
-        }).start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                Log.i("live", "开始get请求");
+//                String re = "";
+//                try {
+//                    Log.i("live", "initView: ");
+//                    re = GetUtil.get("http://api.nlkmlk.com:81/love/user/2091002");
+//                    Log.i("live", "http://api.nlkmlk.com:81/love/user/2091002 \n" + re);
+//                } catch (IOException e) {
+//                    Log.i("live", "initView: result" + e.getMessage());
+//                    e.printStackTrace();
+//                }
+//                Log.i("live", "结束get请求");
+//            }
+//        }).start();
 
 
 //        Toast.makeText(mActivity, "result\n" + result, Toast.LENGTH_SHORT).show();
@@ -425,8 +424,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         switch (view.getId()) {
 
             case R.id.show_books:
-                startActivity(new Intent(mActivity, BookListActivity1.class));
+                startActivity(new Intent(mActivity, ShowVideoActivity.class));
 /*view-source:http://www.sssxx49.com/html/aky/index20.html   图书*/
+
+
+
 
                 //图书界面
                 break;

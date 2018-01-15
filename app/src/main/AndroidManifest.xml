@@ -40,6 +40,7 @@
         <activity android:name=".ui.PageJsoupActivity" />
         <activity android:name=".ui.PageJsoupActivity_bak" />
         <activity android:name=".ui.TTLActivity" />
+        <activity android:name=".ui.ShowVideoActivity" />
         <activity android:name=".ui.TTLTypeListActivity" />
         <activity
             android:name=".ui.TTLVideoActivity"
