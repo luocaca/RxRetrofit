@@ -1,4 +1,4 @@
-package luocaca.rxretrofit.ui;
+package luocaca.rxretrofit.ui.maomi;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -20,7 +20,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.gson.Gson;
 
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -42,13 +41,14 @@ import luocaca.rxretrofit.base.BaseActivity;
 import luocaca.rxretrofit.bean.Book;
 import luocaca.rxretrofit.bean.JsoupPageBean;
 import luocaca.rxretrofit.cache.ACache;
+import luocaca.rxretrofit.http.JsoupUtil;
 import luocaca.rxretrofit.ui.viewbigimage.ViewBigImageActivity;
 
 /**
- * Created by Administrator on 2017/10/21 0021.
+ * 猫咪看图
  */
 
-public class PageJsoupActivity extends BaseActivity implements View.OnClickListener {
+public class MaoMiiImagesActivity extends BaseActivity implements View.OnClickListener {
 
     private static final String TAG = "PageJsoupActivity";
 
@@ -66,7 +66,7 @@ public class PageJsoupActivity extends BaseActivity implements View.OnClickListe
     private String lastUrl;
     private String nextUrl;
     private ArrayList<String> dataList = new ArrayList<>();
-    public static String initUrl = "http://www.sssxx49.com/html/mode/index1309.html";
+    public static String initUrl = "https://www.661cf.com/htm/piclist1";
 
     public JsoupPageBean pageBean = new JsoupPageBean();
     private StaggeredGridLayoutManager layoutManager;
@@ -81,7 +81,7 @@ public class PageJsoupActivity extends BaseActivity implements View.OnClickListe
         aCache = ACache.get(mActivity);
 //        initUrl = "http://www.sssxx49.com/html/mode/index1309.html";
 
-        dialog = new ProgressDialog(PageJsoupActivity.this);
+        dialog = new ProgressDialog(MaoMiiImagesActivity.this);
         dialog.setMessage("加载中...");
         dialog.setCanceledOnTouchOutside(false);
         dialog.show();
@@ -123,10 +123,11 @@ public class PageJsoupActivity extends BaseActivity implements View.OnClickListe
         try {
             //http://www.sssxx49.com
             //a href=/html/mode/index1310.html>
-            String baseUrl = "http://www.sssxx49.com";
+            String baseUrl = "";
+//            String baseUrl = "http://www.sssxx49.com";
 //            doc = Jsoup.connect("http://www.dytt8.net/html/gndy/dyzz/index.html").get();
-            doc = Jsoup.connect(url).get();
-
+//            doc = Jsoup.connect(url).get();
+            doc = JsoupUtil.getMaoMiHtmlPage(url);
 
             String title = doc.title();
             pageBean.title = title;
@@ -138,27 +139,19 @@ public class PageJsoupActivity extends BaseActivity implements View.OnClickListe
 
             //倒数5 下一页
             //倒数6  上一页
-            if (a_tags.size() > 6) {
-                lastUrl = baseUrl + a_tags.get(a_tags.size() - 6).attr("href");
-                nextUrl = baseUrl + a_tags.get(a_tags.size() - 5).attr("href");
-                Log.i(TAG, "上一页" + baseUrl + a_tags.get(a_tags.size() - 6));
-                Log.i(TAG, "下一页" + baseUrl + a_tags.get(a_tags.size() - 5));
 
+            Element xia = doc.getElementsContainingOwnText("下一篇").first();
+            Element xia1 = doc.getElementsContainingText("下一篇").first();
+//                lastUrl = baseUrl + a_tags.get(a_tags.size()).attr("href");
+//                nextUrl = baseUrl + a_tags.get(a_tags.size() - 10).attr("href");
+            //	<ul><span class="last">上一篇:</span> <span class="next">下一篇:下一篇：
+            // <a href='/htm/girl16/2381.htm'>第133期</a></span></ul>
+            if (xia != null) {
+                pageBean.nextUrl = xia.getElementsByTag("a").first().attr("abs:href");
                 pageBean.lastUrl = lastUrl;
-                pageBean.nextUrl = nextUrl;
-
 
             }
 
-
-            Elements div = doc.select("div[AttrName=content]");
-
-            for (int i = 0; i < div.size(); i++) {
-                String a_href = div.attr("href");
-                String src = div.attr("src");
-                Log.i(TAG, "<a>:" + a_href);
-                Log.i(TAG, "<src>:" + src);
-            }
 
             Elements srcs = doc.select("img"); //打印所有src 地址
             Element srcStart = srcs.first();
@@ -249,9 +242,9 @@ public class PageJsoupActivity extends BaseActivity implements View.OnClickListe
                 bundle.putInt("selet", 2);// 2,大图显示当前页数，1,头像，不显示页数
                 bundle.putInt("code", dataList.size() - 1 - lastIndex);//第几张
                 bundle.putStringArrayList("imageuri", dataList);
-                Intent intent = new Intent(PageJsoupActivity.this, ViewBigImageActivity.class);
+                Intent intent = new Intent(MaoMiiImagesActivity.this, ViewBigImageActivity.class);
                 intent.putExtras(bundle);
-                PageJsoupActivity.this.startActivity(intent);
+                MaoMiiImagesActivity.this.startActivity(intent);
 
                 break;
             case R.id.button5:
@@ -355,7 +348,7 @@ public class PageJsoupActivity extends BaseActivity implements View.OnClickListe
 
         @Override
         public MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(mContext).inflate(R.layout.item_book, null);
+            View view = LayoutInflater.from(mContext).inflate(R.layout.item_images, null);
             MyHolder myHolder = new MyHolder(view);
             return myHolder;
         }
@@ -370,10 +363,11 @@ public class PageJsoupActivity extends BaseActivity implements View.OnClickListe
                         .crossFade(700)
                         .dontAnimate()
                         .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                        .centerCrop().override(1080, 1080*3/4)
                         .into(holder.imageView);
             }
 
-            Log.i(TAG+"url", ": " + urlList.get(position));
+            Log.i(TAG + "url", ": " + urlList.get(position));
 
 
             holder.imageView.setOnClickListener(new View.OnClickListener() {

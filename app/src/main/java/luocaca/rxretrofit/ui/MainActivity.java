@@ -40,6 +40,7 @@ import luocaca.rxretrofit.di.component.DaggerMainActivityComponent;
 import luocaca.rxretrofit.di.module.ClientModel;
 import luocaca.rxretrofit.http.Api;
 import luocaca.rxretrofit.http.JsonUtil;
+import luocaca.rxretrofit.ui.maomi.MaoMiActivity;
 import retrofit2.Retrofit;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -501,10 +502,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 VideoListActivity.initUrl = UR_Pic.ktdm.mUrl;
                 startActivity(new Intent(MainActivity.this, VideoListActivity.class));
                 break;
-            case R.id.xsyp:
-                VideoListActivity.initUrl = UR_Pic.xsyp.mUrl;
-                startActivity(new Intent(MainActivity.this, VideoListActivity.class));
-                break;
+
 
 
             case R.id.yzfq:
@@ -536,6 +534,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
              <li><a href="/htm/index9.html">学生影片</a></li>
              */
 
+
+            /*猫咪*/
+            case R.id.xsyp:
+//                VideoListActivity.initUrl = UR_Pic.xsyp.mUrl;
+                startActivity(new Intent(MainActivity.this, MaoMiActivity.class));
+                break;
 
             case R.id.fab:
 

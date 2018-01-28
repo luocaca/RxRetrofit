@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>兔宝宝-首页</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="robots" content="all">
+  <meta name="keywords" content="兔宝宝-首页">
+  <meta name="description" content="兔宝宝-首页">
+  <link type="text/css" rel="stylesheet" href="/css/style.css">
+ </head>
+ <body>
+  <script type="text/javascript" src="/js/config.js"></script>
+  <div id="header_box"></div>
+  <div id="top_box"></div>
+  <div class="wrap mt20">
+   <div class="box cat_pos clearfix">
+    <span class="cat_pos_l">兔宝宝-首页</span>
+   </div>
+  </div>
+  <div class="wrap mt20">
+   <div class="box movie_list">
+    <ul>
+     <li><a href="/htm/tubaobao0/67.htm" target="_blank"><h3>2014七月1</h3><img src="https://img.581gg.com/tubaobao/2014/2014.7A/1.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/66.htm" target="_blank"><h3>2014六月2</h3><img src="https://img.581gg.com/tubaobao/2014/2014.6B/22.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/65.htm" target="_blank"><h3>2014六月1</h3><img src="https://img.581gg.com/tubaobao/2014/2014.6A/71.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/64.htm" target="_blank"><h3>2014五月2</h3><img src="https://img.581gg.com/tubaobao/2014/2014.5B/37.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/63.htm" target="_blank"><h3>2014五月1</h3><img src="https://img.581gg.com/tubaobao/2014/2014.5A/31.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/62.htm" target="_blank"><h3>2014四月2</h3><img src="https://img.581gg.com/tubaobao/2014/2014.4B/2.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/61.htm" target="_blank"><h3>2014四月1</h3><img src="https://img.581gg.com/tubaobao/2014/2014.4A/29.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/60.htm" target="_blank"><h3>2014三月2</h3><img src="https://img.581gg.com/tubaobao/2014/2014.3B/14.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/59.htm" target="_blank"><h3>2014三月1</h3><img src="https://img.581gg.com/tubaobao/2014/2014.3A/13.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/58.htm" target="_blank"><h3>2014二月2</h3><img src="https://img.581gg.com/tubaobao/2014/2014.2B/14.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/57.htm" target="_blank"><h3>2014二月1</h3><img src="https://img.581gg.com/tubaobao/2014/2014.2A/11.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/56.htm" target="_blank"><h3>2014一月2</h3><img src="https://img.581gg.com/tubaobao/2014/2014.1B/33.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobao0/55.htm" target="_blank"><h3>2014一月1</h3><img src="https://img.581gg.com/tubaobao/2014/2014.1A/27.jpg"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobaolist3/" target="_blank"><h3>2013全集</h3><img src="https://gg.385gg.com/tubaobao/2013.gif"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobaolist2/" target="_blank"><h3>2012全集</h3><img src="https://gg.385gg.com/tubaobao/2012.gif"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+     <li><a href="/htm/tubaobaolist1/" target="_blank"><h3>2011全集</h3><img src="https://gg.385gg.com/tubaobao/2011.gif"><p><span>点击进入</span>蕾丝兔宝宝</p></a></li>
+    </ul>
+   </div>
+   <div id="bottom_box"></div>
+   <div id="footer_box"></div>
+   <script type="text/javascript" src="/js/layout.js"></script>
+   <div style="display:none">
+    <script type="text/javascript" src="/js/tj.htm"></script>
+   </div>
+  </div>
+ </body>
+</html>

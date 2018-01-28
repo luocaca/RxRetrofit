@@ -40,6 +40,10 @@
         <activity android:name=".ui.PageJsoupActivity" />
         <activity android:name=".ui.PageJsoupActivity_bak" />
         <activity android:name=".ui.TTLActivity" />
+        <activity android:name=".ui.maomi.MaoMiActivity" />
+        <activity android:name=".ui.maomi.MaoMiItemActivity" />
+        <activity android:name=".ui.maomi.MaoMiiImagesActivity" />
+        <activity android:name=".ui.maomi.MaoMiItemTypeActivity" />
         <activity android:name=".ui.ShowVideoActivity" />
         <activity android:name=".ui.TTLTypeListActivity" />
         <activity
